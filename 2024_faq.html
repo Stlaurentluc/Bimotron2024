@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bmtrn_parallax.css">
+    <link rel="icon" type="image/x-icon" href="assets/bimotron_icon.ico">
+    <title>bimotron|Architecture Numérique</title>
+</head>
+<body>
+    <a class="retourhaut" href="#presentation"><div class="arrow"></div></a>
+    <div class="parallax_wrapper">
+        <div class="intro_faq" id="intro">
+            <div class="presentation" id="presentation">
+                <header class="navbar">    
+                    <a href="index.html"><img class="logo" src="assets/bimotron_logo.png" alt="Icon_gros.png"></a>
+                    <div class="burger_menu" onclick="myFunction(this)">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </div>
+                    <nav class="menu" id="menu">
+                        <ul class="index">                
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="2024_scan3D.html">Numérisation 3D</a></li>
+                            <li><a href="2024_faq.html">FAQ</a></li>
+                            <li><a href="2024_contact.html">Contact</a></li> 
+                        </ul>                           
+                    </nav>
+                    <script>
+                        function myFunction(x) {
+                            x.classList.toggle("change");
+                            document.getElementById("menu").classList.toggle("show");}    
+                    </script>
+                </header>
+                <div class="titre_principal">
+                    <h1>Foire aux questions</h1>
+                </div>
+            </div>
+        </div>
+        <div class="nonparallax">
+            <div class="transitions" id="trans">
+                <h4>Quelle est la précision des relevés ?</h4>
+                <p>L’appareil utilisé projette des points laser de mesure sur les surface 
+                    avec un espacement 6 millimètres a une distance de 10 mètres.  Plus la surface 
+                    sera près du scanner plus la densitées des points augmentera.</p>
+                <h4>Les relevés extérieurs peuvent-ils se faire en tout temps ?</h4>
+                <p>La température extérieure doit se situer entre 
+                    5 et 40 degrés Celsius et le temps doit être dégagé.</p>
+                <h4>Quel est le type de laser utilisé ?</h4>
+                <p>Le laser utilisé est de classe 1 selon la nome EC 60825-1:2014 
+                    - Sécurité des appareils à laser - Partie 1: Classification des matériels 
+                    et exigences.</p>
+                <h4>Le laser 3D peut-il donner les compositions intérieures des murs ?</h4>
+                <p>Les faisceaux lasers ne traversent pas les objects et surfaces 
+                    présents dans la pièce. La composition ne peut donc pas être connue 
+                    avec l’appareil.</p>
+            </div>
+        </div>
+
+        <div class="outro_screen" id="outro">
+            <footer>
+                <nav class="nav_footer">
+                    <p>coordonnées</p>
+                    <ul>
+                        <li><a href="tel:+15148161203">514 816 1203</a></li>
+                        <li><a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">
+                            l.stlaurent@bimotron.com</a></li>
+                        <a class="icons" href="https://www.linkedin.com/in/luc-st-laurent-0509437a/">
+                            <img src="assets/linkedin-64.png"></a></li>
+                   </ul>
+                </nav>
+                <div class="endline"></div>
+                <p2 class="copyright">© 2024 bimotron architecture numérique inc.</p2>
+            </footer>
+        </div>
+    </div>    
+</body>
+</html>

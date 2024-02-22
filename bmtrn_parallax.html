@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bmtrn_parallax.css">
+    <link rel="icon" type="image/x-icon" href="assets/bimotron_icon.ico">
+    <title>bimotron|Architecture Numérique</title>
+</head>
+<body>
+    <a class="retourhaut" href="#presentation"><div class="arrow"></div></a>
+    <div class="parallax_wrapper">
+        <div class="intro_screen" id="intro">
+            <div class="presentation" id="presentation">
+                <header class="navbar">    
+                    <a href="index.html"><img class="logo" src="assets/bimotron_logo.png" alt="Icon_gros.png"></a>
+                    <div class="burger_menu" onclick="myFunction(this)">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </div>
+                    <nav class="menu" id="menu">
+                        <ul class="index">                
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="2024_scan3D_v2.html">Numérisation 3D</a></li>
+                            <li><a href="2024_faq_v2.html">FAQ</a></li>
+                            <li><a href="2024_contact_v2.html">Contact</a></li> 
+                        </ul>                           
+                    </nav>
+                    <script>
+                        function myFunction(x) {
+                            x.classList.toggle("change");
+                            document.getElementById("menu").classList.toggle("show");}    
+                    </script>
+                </header>
+                <div class="titre_principal">
+                    <h1>Une ressource pour vos projets</h1>
+                    <p>Bimotron a pour mission de soutenir les bureaux d’architectes 
+                        composés d’une petite équipe dans le développement des outils BIM.</p>
+                    <button><a href="#services"></a>Découvrir nos services ...</button>
+                </div>
+            </div>
+        </div>
+        <div class="nonparallax"></div>
+        <div class="parallax_group" id="group-1">
+            <div class="parallax_layer base_layer">
+                Base Layer Page
+            </div>
+            <div class="parallax_layer mid_layer">
+                Mid Layer
+            </div>
+        </div>
+        <div class="nonparallax"></div>
+        <div class="parallax_group" id="group-2">
+            <div class="parallax_layer mid_layer">
+                Mid Layer Page
+            </div>
+            <div class="parallax_layer top_layer">
+                Top Layer
+            </div>
+        </div>
+        <div class="nonparallax"></div>
+        <div class="parallax_group" id="group-3">
+            <div class="parallax_layer base_layer">
+                Base Layer Page
+            </div>
+            <div class="parallax_layer mid_layer">
+                Mid Layer
+            </div>
+        </div>
+        <div class="outro_screen" id="outro">
+            <footer>
+                <nav class="nav_footer">
+                    <p>coordonnées</p>
+                    <ul>
+                        <li><a href="tel:+15148161203">514 816 1203</a></li>
+                        <li><a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">
+                            l.stlaurent@bimotron.com</a></li>
+                        <a class="icons" href="https://www.linkedin.com/in/luc-st-laurent-0509437a/">
+                            <img src="assets/linkedin-64.png"></a></li>
+                   </ul>
+                </nav>
+                <div class="endline"></div>
+                <p2 class="copyright">© 2024 bimotron architecture numérique inc.</p2>
+            </footer>
+        </div>
+    </div>    
+</body>
+</html>
