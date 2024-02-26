@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bmtrn_parallax.css">
+    <link rel="stylesheet" href="2024style.css">
     <link rel="icon" type="image/x-icon" href="assets/bimotron_icon.ico">
     <title>bimotron|Architecture Numérique</title>
 </head>
 <body>
-    <a class="retourhaut" href="#presentation"><div class="arrow"></div></a>
-    <div class="parallax_wrapper">
+    <a class="retourhaut" href="#presentation">
+        <div class="arrow"></div>
+    </a>
+    <div class="parallax_wrapper" >
         <div class="intro_screen accueil" id="intro">
             <div class="presentation" id="presentation">
-                <header class="navbar">    
+                <header class="navbar">
                     <a href="index.html"><img class="logo" src="assets/bimotron_logo.png" alt="Icon_gros.png"></a>
                     <div class="burger_menu" onclick="myFunction(this)">
                         <div class="bar bar1"></div>
@@ -20,24 +23,25 @@
                         <div class="bar bar3"></div>
                     </div>
                     <nav class="menu" id="menu">
-                        <ul class="index">                
+                        <ul class="index">
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="2024_scan3D.html">Numérisation 3D</a></li>
                             <li><a href="2024_faq.html">FAQ</a></li>
-                            <li><a href="2024_contact.html">Contact</a></li> 
-                        </ul>                           
+                            <li><a href="2024_contact.html">Contact</a></li>
+                        </ul>
                     </nav>
                     <script>
                         function myFunction(x) {
                             x.classList.toggle("change");
-                            document.getElementById("menu").classList.toggle("show");}    
+                            document.getElementById("menu").classList.toggle("show");
+                        }    
                     </script>
                 </header>
                 <div class="titre_principal">
                     <h1>Une Ressource pour vos projets</h1>
-                    <p>Bimotron a pour mission de soutenir les bureaux d’architectes 
+                    <p>Bimotron a pour mission de soutenir les bureaux d’architectes
                         composés d’une petite équipe dans le développement des outils BIM.</p>
-                    <button><a href="#services"></a>Découvrir nos services ...</button>
+                        <div><a class="bouton-services" href="#titre_services">Découvrir nos services</a></div>
                 </div>
             </div>
         </div>
@@ -45,91 +49,95 @@
             <div class="transitions" id="1">
                 <h2>Spécialisé en architecture numérique</h2>
                 <p>En offrant des services de modélisation 3D et d’accompagnement
-                    de logiciel BIM, Bimotron architecture numérique est un 
+                    de logiciel BIM, Bimotron architecture numérique est un
                     collaborateur de confiance pour la réalisation de vos projets.</p>
                 <div class="separateur"></div>
-                <p>Avec les compétences acquises au cours des années, il est 
-                        complémentaire à l’équipe en place et s’adapte à la réalité des 
-                        projets et aux profils des membres de l’équipe.</p>
+                <p>Avec les compétences acquises au cours des années, il est
+                    complémentaire à l’équipe en place et s’adapte à la réalité des
+                    projets et aux profils des membres de l’équipe.</p>
             </div>
         </div>
         <div class="parallax_group" id="group-1">
             <div class="parallax_layer base_layer ">
                 <!--Base Layer Page -->
-                <img class="ban" src="assets/Banniere1.jpg" alt="">
+                <img class="ban2" src="assets/Banniere1.jpg" alt="">
             </div>
             <div class="parallax_layer mid_layer">
                 <div class="transitions" id="2">
-                    <p><strong>De plus, nous comprenons les défis auxquels les entreprises sont 
-                        confrontées et nous nous efforçons de leur fournir des outils et des 
-                        services abordables, tels que la numérisation laser 3D.
-                    </strong></p>
+                    <p><strong>De plus, nous comprenons les défis auxquels les entreprises sont
+                            confrontées et nous nous efforçons de leur fournir des outils et des
+                            services abordables, tels que la numérisation laser 3D.
+                        </strong></p>
                     <div class="separateur"></div>
-                    <p><strong>La numérisation 3D représente l'une de ces avancées majeures, 
-                        offrant aux architectes des opportunités pour optimiser leur processus.</strong></p> 
+                    <p><strong>La numérisation 3D représente l'une de ces avancées majeures,
+                            offrant aux architectes des opportunités pour optimiser leur processus.</strong></p>
                 </div>
             </div>
         </div>
         <div class="nonparallax" id="group-0">
-            <h1 class="titre_services" >Nos services</h1>
+            <h1 class="titre_services" id="titre_services">Nos services</h1>
             <div class="sections" id="services">
                 <div class="sous_sections">
                     <div class="image_sections">
-                        <img src="assets/scan3D.jpg" alt="">
+                        <img class="imgservices" src="assets/scan3D.jpg" alt="">
                     </div>
                     <div class="contenu_sections">
                         <div>
                             <h2>Relevé par numérisation laser 3D</h2>
-                            <p>Grâce à cet outil qui est de plus en plus accessible, il est possible d’obtenir 
+                            <p>Grâce à cet outil qui est de plus en plus accessible, il est possible d’obtenir
                                 des relevés exhaustifs en 3 dimensions, autant pour l’intérieur que l’extérieur.</p>
-                            <p>De plus, l'intégration facile de cet outil aux logiciels Autodesk AutoCAD et Revit 
+                            <p>De plus, l'intégration facile de cet outil aux logiciels Autodesk AutoCAD et Revit
                                 lors des différentes étapes d'un projet offre une valeur ajoutée significative.</p>
-                            <p>En plus de faciliter la consultation tout au long du projet, cette intégration permet 
-                                d'observer concrètement les conditions existantes grâce à des modèles en 3D fidèles à la 
-                                réalité. Cela permet aux professionnels de mieux appréhender les défis potentiels 
+                            <p>En plus de faciliter la consultation tout au long du projet, cette intégration permet
+                                d'observer concrètement les conditions existantes grâce à des modèles en 3D fidèles à la
+                                réalité. Cela permet aux professionnels de mieux appréhender les défis potentiels
                                 et d'intervenir de façon adéquate dès les premières phases du projet.</p>
-                            <p>La transition fluide entre les relevés, la modélisation et la conception au sein des 
-                                plateformes familières d'Autodesk favorise une collaboration plus efficace et réduit 
-                                les erreurs potentielles.</p>             
-                        </div>   
-                        <a href="2024_scan3D_v2.html">
-                            <button>En savoir plus...</button> 
-                        </a> 
-                    </div> 
+                            <p>La transition fluide entre les relevés, la modélisation et la conception au sein des
+                                plateformes familières d'Autodesk favorise une collaboration plus efficace et réduit
+                                les erreurs potentielles.</p>
+                        </div>
+                        <a href="2024_scan3D.html">
+                            <button>En savoir plus...</button>
+                        </a>
+                    </div>
                 </div>
-                
                 <div class="sous_sections">
                     <div class="image_sections">
-                        <img src="assets/modelisation3D.jpg" alt="">
+                        <img class="imgservices"src="assets/modelisation3D.jpg" alt="">
                     </div>
                     <div class="contenu_sections">
                         <div>
                             <h2>Modélisation 3D</h2>
-                            <p>Le support en modélisation 3D à l’externe est un atout pour modéliser un bâtiment existant ou 
+                            <p>Le support en modélisation 3D à l’externe est un atout pour modéliser un bâtiment
+                                existant ou
                                 le contexte immédiat d’un projet.</p>
-                            <p>Ceci donnera à votre équipe la possibilité de focusser sur la partie essentielle des projets, 
+                            <p>Ceci donnera à votre équipe la possibilité de focusser sur la partie essentielle des
+                                projets,
                                 c’est-à-dire le concept.</p>
-                            <p>Une expérience en modélisation 3D et en projets d’architecture a un impact positif sur la rapidité, 
+                            <p>Une expérience en modélisation 3D et en projets d’architecture a un impact positif sur la
+                                rapidité,
                                 la compréhension, la technique utilisée ainsi que sur le résultat final.</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-
-
                 <div class="sous_sections">
                     <div class="image_sections">
-                        <img src="assets/accompagnement.jpg" alt="">
+                        <imgclass="imgservices" src="assets/accompagnement.jpg" alt="">
                     </div>
                     <div class="contenu_sections">
                         <div>
-                            <h2>Accompagnement BIM</h2>                
-                            <p>À la suite d’une formation de base, il n’est pas rare que les professionnels rencontrent des difficultés 
-                                en développant un projet spécifique.  Le support d’un consultant externe est une bonne façon de canaliser 
+                            <h2>Accompagnement BIM</h2>
+                            <p>À la suite d’une formation de base, il n’est pas rare que les professionnels rencontrent
+                                des difficultés
+                                en développant un projet spécifique. Le support d’un consultant externe est une bonne
+                                façon de canaliser
                                 les connaissances acquises et d’éviter des complications.</p>
-                            <p>L’accompagnement des membres de l’équipe dans un contexte de projet permet une continuité de 
+                            <p>L’accompagnement des membres de l’équipe dans un contexte de projet permet une continuité
+                                de
                                 l’apprentissage tout en respectant les objectifs et les échéanciers du projet.</p>
-                            <p>L’approche est basée sur la compréhension du contexte du projet et des forces et faiblesses de chacun 
-                                pour orienter l’équipe vers un résultat défini.  
+                            <p>L’approche est basée sur la compréhension du contexte du projet et des forces et
+                                faiblesses de chacun
+                                pour orienter l’équipe vers un résultat défini.
                                 Le service d’accompagnement peut se faire à vos bureaux ou à distance.</p>
                         </div>
                     </div>
@@ -137,12 +145,12 @@
             </div>
         </div>
         <div class="parallax_group" id="group-2">
-            <div class="parallax_layer mid_layer">
-                <!--Mid Layer Page-->
-                <img class="ban" src="assets/Banniere2.jpg" alt="">
+            <div class="parallax_layer base_layer ">
+                <!--Base Layer Page -->
+                <img class="ban2" src="assets/Banniere2.jpg" alt="">
             </div>
-            <div class="parallax_layer top_layer">
-                <!-- Top Layer -->
+            <div class="parallax_layer mid_layer">
+                <!--Mid Layer--> 
             </div>
         </div>
         <div class="nonparallax" id="group-0">
@@ -164,11 +172,11 @@
                     <div class="arguments_items">
                         <h2>+</h2>
                         <p>Un service orienté vers la collaboration et le soutien</p>
-                    </div> 
-                </div>      
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="parallax_group" id="group-3">
+        <div class="parallax_group section_contact" id="group-3">
             <div class="parallax_layer base_layer">
                 <!--Base Layer Page -->
                 <img class="ban" src="assets/Banniere1.jpg" alt="">
@@ -177,27 +185,14 @@
                 <div class="transitions" id="3">
                     <h1>Parlez-nous de vos projet</h1>
                     <a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">
-                        <button>Contactez-nous...</button> 
+                        <button>Contactez-nous...</button>
                     </a>
                 </div>
             </div>
         </div>
         <div class="outro_screen" id="outro">
-            <footer>
-                <nav class="nav_footer">
-                    <p>COORDONNÉES</p>
-                    <ul>                        
-                        <li><a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">
-                            l.stlaurent@bimotron.com</a></li>
-                        <li><a href="tel:+15148161203">514 816 1203</a></li>
-                        <a class="icons" href="https://www.linkedin.com/in/luc-st-laurent-0509437a/">
-                            <img src="assets/linkedin-64.png"></a></li>
-                   </ul>
-                </nav>
-                <div class="endline"></div>
-                <p2 class="copyright">© 2024 bimotron architecture numérique inc.</p2>
-            </footer>
+            <iframe class="footer" src="_footer.html" frameborder="0" scrolling = "no"></iframe>
         </div>
-    </div>    
-</body>
+    </div></body>
+
 </html>
