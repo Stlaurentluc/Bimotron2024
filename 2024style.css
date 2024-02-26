@@ -106,7 +106,9 @@ a {text-align: center;}
     border: none;
     font-size: .75rem;
     transition: 0.75s;}
-button:hover {background-color: var(--color7);}
+.bouton-services, button:hover{
+    opacity: 50%; 
+    cursor: pointer;}
 .resetsubmit{ align-content: center;}
 /*----------------------------------------------------------------------*/
 .navbar {
