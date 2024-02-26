@@ -80,8 +80,7 @@ a {text-align: center;}
     position: fixed;
     bottom: 4rem;
     right: 2rem;
-    z-index: 9999;
-    transition: 0.5s;}
+    z-index: 9999;}
 .arrow {
     height: 20px;
     width: 20px;
@@ -106,7 +105,7 @@ a {text-align: center;}
     border: none;
     font-size: .75rem;
     transition: 0.75s;}
-.bouton-services, button:hover{
+.bouton-services:hover, button:hover{
     opacity: 50%; 
     cursor: pointer;}
 .resetsubmit{ align-content: center;}
