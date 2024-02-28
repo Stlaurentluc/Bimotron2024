@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="icon" type="image/x-icon" href="assets/bimotron_icon.ico">
     <title>bimotron|Architecture Numérique</title>
 </head>
+
 <body>
-    <a class="retourhaut" href="#presentation"><div class="arrow"></div></a>
+    <a class="retourhaut" href="#intro"><div class="arrow"></div></a>
     <div class="parallax_wrapper">
-        <div class="intro_screen contact" id="intro">
+        <section class="intro_screen contact" id="intro">
             <div class="presentation" id="presentation">
-                <header class="navbar">    
+                <header class="navbar">
                     <a href="index.html"><img class="logo" src="assets/bimotron_logo.png" alt="Icon_gros.png"></a>
                     <div class="burger_menu" onclick="myFunction(this)">
                         <div class="bar bar1"></div>
@@ -20,44 +22,42 @@
                         <div class="bar bar3"></div>
                     </div>
                     <nav class="menu" id="menu">
-                        <ul class="index">                
+                        <ul class="index">
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="2024_scan3D.html">Numérisation 3D</a></li>
                             <li><a href="2024_faq.html">FAQ</a></li>
-                            <li><a href="2024_contact.html">Contact</a></li> 
-                        </ul>                           
+                            <li><a href="2024_contact.html">Contact</a></li>
+                        </ul>
                     </nav>
                     <script>
                         function myFunction(x) {
                             x.classList.toggle("change");
-                            document.getElementById("menu").classList.toggle("show");}    
+                            document.getElementById("menu").classList.toggle("show");
+                        }    
                     </script>
                 </header>
                 <div class="formulaire">
-                    <div >
+                    <div class="box_text">
                         <h2>Des Questions ?</h2>
-                        <p>Si vous avez des questions ou des commentaires, 
-                            veuillez communiquer avec nous par courriel ou par téléphone. 
-                            Il nous fera plaisir de vous répondre et de vous aider dans la réalisation 
+                        <p>Si vous avez des questions ou des commentaires,
+                            veuillez communiquer avec nous par courriel ou par téléphone.
+                            Il nous fera plaisir de vous répondre et de vous aider dans la réalisation
                             de vos projets!</p>
                     </div>
                     <div class="box">
-                        <input type="text" placeholder="Nom" required />   
+                        <input type="text" placeholder="Nom" required />
                         <input type="text" placeholder="Téléphone" />
-                        <input type="email" placeholder="Courriel" required />               
-                        <textarea name="message" placeholder="Votre question ..."  required></textarea>                        
+                        <input type="email" placeholder="Courriel" required />
+                        <textarea name="message" placeholder="Votre question ..." required></textarea>
+                        <button type="reset">Recommencer</button>
+                        <button type="submit">Envoyer</button>
                     </div>
-                    <div class="resetsubmit">
-                        <button type="reset">Recommencer</button> 
-                        <button type="submit">Envoyer</button> 
-                    </div>                                
-            </div>
-            </div>
-        </div>
-
+                </div>
+        </section>
         <div class="outro_screen" id="outro">
-            <iframe class="footer" src="footer.html" frameborder="0" scrolling = "no"></iframe>
+            <iframe class="footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>

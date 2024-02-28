@@ -1,12 +1,10 @@
-:root {
-    --color1: #EFEFEF;
-    --color2: #F54C01;
-    --color3: #D1D3D3;
-    --color4: #9FBAC6;
-    --color5: #014876;
-    --color6: #333E48;
-    --color7: #08202A;
-    --color8: #9fbac6;}
+:root{
+    --color1: #08202A;
+    --color2: #333E48;
+    --color3: #014876;
+    --color4: #F54C01;
+    --color5: #EFEFEF;
+}
 html {
     font-size: 100%;
     box-sizing: border-box;}
@@ -14,28 +12,36 @@ html {
 * {scroll-behavior: smooth;}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3;
-    color:var(--color7);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 1.4em;
+    color:var(--color1);
     margin: 0;
     padding: 0;
     max-width: 1220px;
     margin-inline: auto;}
+h1{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 0em;
+    line-height: 1.2em;}
 img{
     display: block;
     max-width: 100%;}
 iframe{
-    height: 100vh;
-    width: 100%;
-}
+    border: none;
+    width: 100%;}
 .footer{
     width: 100%;
-    height: 35dvh;
-    background-color: var(--color6);}
-h1,h2,h3,h4{color: var(--color5);}
-h2 {text-align: center; padding: 1rem;}
+    height: 40dvh;
+    background-color: var(--color2);}
+h1,h2,h3,h4{color: var(--color3); text-align: center;}
 p {text-align: justify; padding: 0 2rem;}
-a {text-align: center;}
-/*-----------------------------------------------------------------------*/
+a {color: var(--color7);text-decoration: none;}
+a:hover {color: var(--color4);transition: 0.3s;}
+.titre{font-size: 2.5rem;}
+/*---------------------------------- media burger -------------------------------------*/
 @media(max-width:620px) {
     .menu {
         position: fixed;
@@ -62,19 +68,19 @@ a {text-align: center;}
 .bar {
     width: 27px;
     height: 4px;
-    background-color: var(--color7);
+    background-color: var(--color1);
     margin: 6px 0;
     border-radius: 2px;}
 .change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
-    background-color: var(--color2);
+    background-color: var(--color4);
     transition: 0.5s;}
 .change .bar2 {
     opacity: 0;
     transition: 0.5s;}
 .change .bar3 {
     transform: translate(0, -10px) rotate(45deg);
-    background-color: var(--color2);
+    background-color: var(--color4);
     transition: 0.5s;}
 .retourhaut {
     position: fixed;
@@ -84,8 +90,8 @@ a {text-align: center;}
 .arrow {
     height: 20px;
     width: 20px;
-    border-top: 4px solid var(--color7);
-    border-left: 4px solid var(--color7);
+    border-top: 4px solid var(--color1);
+    border-left: 4px solid var(--color1);
     transform: rotate(45deg);
     z-index: 9999;
     border-radius: 2px;}
@@ -93,30 +99,29 @@ a {text-align: center;}
     width: 27px;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--color6);
+    background-color: var(--color1);
     margin: 1rem auto;}
 /*-----------------------------------  button  -----------------------------------*/
 .bouton-services, button {
-    color: var(--color1);
-    background-color: var(--color2);
+    color: var(--color5);
+    background-color: var(--color4);
     border-radius: 10px;
     padding: .5rem;
     text-decoration: none;
     border: none;
     font-size: .75rem;
-    transition: 0.75s;}
-.bouton-services:hover, button:hover{
+    transition: 0.75s;
+    margin: 1rem 0;}
+button:hover, .bouton-services:hover {
     opacity: 50%; 
     cursor: pointer;}
 .resetsubmit{ align-content: center;}
-/*----------------------------------------------------------------------*/
+.bouton{display: flex;justify-content:center;}
+/*---------------------------------- navigation ------------------------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;}
-.show {
-    transition: 0.5s;
-    opacity: 100;}
 .logo {
     height: 4rem;
     margin: 1rem;}
@@ -132,117 +137,10 @@ a {text-align: center;}
     list-style: none;
     padding: 0;
     margin: 0;}
-.index li {
-    list-style: none;
-    margin-inline-end: 2rem;}
-.index a {
-    color: var(--color7);
-    text-decoration: none;}
-.index a:hover {
-    color: var(--color2);
-    transition: 0.5s;}
-.titre_principal {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 1rem;}
-.titre_principal h1 {
-    color: var(--color7);
-    font-size: 3rem;}
-/*----------------------------------------------------------------------*/
-#titre {
-    text-align: center;
-    font-size: 2.5rem;}
-.transitions,.sections {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0rem;}
-.contenu_sections,
-.image_sections,
-.sous_sections,
-.avantages_items,
-.image_sections_equipement {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;}
-.sections h3 {text-align: center;}
-.transitions, .sections h4 {margin: 0; text-align: left;padding-left: 1.5rem;}
-.transitions p2 {
-    text-align: justify;
-    font-size: .75rem;
-    padding: 0 2rem;
-    margin: 0 auto;}
-.sections img {
-    width: 75%;
-    margin: 1rem auto;
-    border-radius: 20px;}
-.transitions iframe {
-    border: none;
-    margin: 1rem auto;}
-.arguments_items{ max-width: 450px; margin: 0 auto;}
-.contenu_sections ul {padding: 0 5rem;}
-.texte_contact {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 1rem;}
-.texte_contact h2 {padding: 1rem 0rem;}
-.transitions iframe {
-    height: 50dvh;
-    border: none;
-    margin: 1rem auto;}
-/*-------------------------------------------------------------------*/
-.formulaire {
-    height: 75dvh;
-    max-width: 75%;
-    margin: .5rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;}
-.formulaire h2{
-    padding: 0 auto;
-    color: var(--color7);}
-.formulaire p{ 
-    margin: 0;
-    padding: 0;}
-.box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;}
-.box input {padding: .75rem 2rem;
-margin: .5rem 0;}
-.box textarea {
-    aspect-ratio: 16/9;
-    padding: .75rem 2rem;
-    margin: 0.5rem 0;}
-.box button {margin: 1rem auto;}
-/*---------------------------------------------------------------------*/
-.nonparallax h1 {text-align: center;  margin-top: 2rem;}
-.parallax_layer h1 {text-align: center;  margin-top: 2rem;}
-/*-------------------------------------------------------------------*/
-.parallax_wrapper {
-    margin: 0;
-    padding: 0;
-    height: 100dvh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 300px;}
-.ban{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;}
-.blueban{height: 100%;}
-.ban2{
-    margin: 0;
-    padding: 0;
-    width: auto;}
+.index li {margin-inline-end: 2rem;}
+.show {transition: 0.5s;opacity: 90;}
+/*------------------------------------------------------------------------------*/
+/*--------------------------------- page accueil --------------------------------------*/
 .accueil{background: url(assets/bimotron_intro_ban.jpg);}
 .scan3d {background: url(assets/bimotron_scan_ban_small.jpg);}
 @media only screen and (min-width: 620px) {
@@ -255,9 +153,66 @@ margin: .5rem 0;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;}
-.outro_screen {
-    z-index: 500;
-    background-color: var(--color6);}
+.titre_principal {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;}
+.titre_principal h1 {
+    text-align: left;
+    color: var(--color1);
+    font-size: 2.5rem;}
+.titre_principal p {padding: 0;}
+/*---------------------------------------------------------------------------------*/
+.sujets,.collabo, .video{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;}
+.sujets{padding: 2rem 0;}  
+.sujets img{max-width: 80%; border-radius: 20px;margin: 0 auto auto auto;}
+.sujets h2{text-align: left; padding-left:2rem;}
+.sujets ul{padding: 0 5rem;}
+.collabo p{text-align: center;}
+.video{padding: 3rem 0;}
+.video h3{width: 80%;margin:auto;text-align: justify;}
+.video p {margin: 0 auto;text-align:center;}
+.etapes h4{text-align: left;padding: 0 2rem;}
+.avantages h2{text-align: center;}
+.formulaire {
+    height: 75dvh;
+    max-width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.formulaire h2{padding: 0 auto;color: var(--color1);}
+.formulaire p{margin: 0;padding: 0;}
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.box input {padding: .5rem .5rem;
+    margin: .5rem 0;}
+.box textarea {
+    aspect-ratio: 16/9;
+    padding: .5rem .5rem;
+    margin: 0.5rem 0;}
+
+
+/*------------------------------- parallax ----------------------------------------*/
+.parallax_wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;}
+.outro_screen {z-index: 500;}
 .nonparallax {
     height: max(500dvh, auto);
     background-color: white;
@@ -272,9 +227,6 @@ margin: .5rem 0;}
     height: 50dvh;
     transform-style: preserve-3d;}
 .section_contact, .estimation{height: 75dvh;}
-.parallax_group2 {
-    background-color: burlywood;
-    height: 100dvh;}
 .parallax_layer {
     display: flex;
     flex-direction: column;
@@ -290,14 +242,14 @@ margin: .5rem 0;}
 #intro {z-index: 0;}
 #group-0 {z-index: 1;}
 #group-1 {z-index: -1;}
-#group-1>.base_layer { /*background-color: red;*/}
+#group-1>.base_layer {}
 #group-2 {z-index: -2;}
-#group-2>.mid_layer { /*background-color: yellowgreen;*/}
+#group-2>.mid_layer {}
 #group-3 { z-index: -1;}
-#group-3>.base_layer { /*background-color: red;*/}
+#group-3>.base_layer {}
 #outro {}
 
-/*-------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------*/
 
 @media only screen and (min-width: 620px) {
     .burger_menu {
@@ -305,17 +257,14 @@ margin: .5rem 0;}
     .menu {
         background-color: hsl(0 0% 0% / 00);
         backdrop-filter: blur(0);}
-    .sous_sections {
-        flex-direction: row;
-        flex-wrap: wrap;}
-    .imgequip {
-            max-width: 25rem;
-            margin: 5rem 1rem auto auto;}
-    .imgservices{max-width: 35rem; }
-        .contenu_sections {flex: 1;}
-        .avantages_items, .etapes_items {flex: 40%;}
-        .formulaire {height: 75dvh;}
-        .contact {flex-direction: row;}
-        .box_text {width: 50%;}
-        .box {width: 50%;}
+    .collabo{flex-direction: row;}
+    .sujets{flex-direction: row;flex-wrap: wrap;}
+    .sujets img{max-width: 40%;}
+    .contenu{flex: 40%;}
+    .etapes{flex: 40%;}
+    .avantages{flex: 40%;}
+    .formulaire{flex-direction: row;align-items: flex-start;padding-top: 3rem;}
+    .box_text {width: 40%;margin: 0 auto;}
+    .box {width: 50%;}
+
 }
