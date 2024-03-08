@@ -49,7 +49,7 @@ iframe{
     background-color: var(--color2);}
 h1,h2,h3,h4{color: var(--color3); text-align: center;}
 p {text-align: justify; padding: 0 2rem;}
-a {color: var(--color6);text-decoration: none;}
+a {color: var(--color1);text-decoration: none;}
 a:hover {color: var(--color4);text-shadow: 2px 2px 4px var(--color4); transition: 0.3s;}
 .titre{font-size: 2.5rem;}
 .basic{
@@ -84,7 +84,7 @@ a:hover {color: var(--color4);text-shadow: 2px 2px 4px var(--color4); transition
 .bar {
     width: 27px;
     height: 4px;
-    background-color: var(--color6);
+    background-color: var(--color1);
     margin: 6px 0;
     border-radius: 2px;}
 .change .bar1 {
@@ -166,7 +166,7 @@ button:hover, .bouton-services:hover {
 .scan3d {background: url(assets/bimotron_scan_ban_small.jpg);}
 @media only screen and (min-width: 620px) {
     .scan3d {background: url(assets/bimotron_scan_ban.jpg);}}
-.faq {background: url(assets/riddler.jpg);
+.faq {background: url(assets/riddler_blancbleu.jpg);
     /* background-color: #014876; */}
 .contact {background: url(assets/bimotron_contact_ban.jpg);}
 .intro_screen {
@@ -184,8 +184,7 @@ button:hover, .bouton-services:hover {
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     overflow: hidden;
-    min-height: 100dvh;
-}
+    min-height: 100dvh;}
 .galaxyvideo{
     position: absolute;
     z-index: -1;
@@ -208,7 +207,7 @@ button:hover, .bouton-services:hover {
     margin: 0;
     font-size: 2.5rem;
     text-align: left;
-    color: var(--color5);
+    color: var(--color3);
     /* font-size: 2.5rem;text-shadow: 2px 2px 4px var(--color4); */}
 .titre_principal p {color: var(--color6);font-size: medium; padding: 0;}
 /*---------------------------------------------------------------------------------*/
