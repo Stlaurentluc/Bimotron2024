@@ -166,7 +166,8 @@ button:hover, .bouton-services:hover {
 .scan3d {background: url(assets/bimotron_scan_ban_small.jpg);}
 @media only screen and (min-width: 620px) {
     .scan3d {background: url(assets/bimotron_scan_ban.jpg);}}
-.faq {background: url(assets/bimotron_faq_ban.jpg);}
+.faq {background: url(assets/riddler.jpg);
+    /* background-color: #014876; */}
 .contact {background: url(assets/bimotron_contact_ban.jpg);}
 .intro_screen {
     height: 100dvh;
