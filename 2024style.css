@@ -65,7 +65,7 @@ a:hover {color: var(--color4);text-shadow: 2px 2px 4px var(--color4); transition
         inset: 0 0 0 max(50%, calc(100% - 230px));
         padding: min(10svh, 6rem) 0rem;
         opacity: 0;
-        background-color: hsl(0 0% 0% / 0.1);
+        background-color: hsla(0, 0%, 100%, 0.1);
         backdrop-filter: blur(.5rem);}
     .burger_menu {
         display: inline-block;
@@ -159,7 +159,7 @@ button:hover, .bouton-services:hover {
     padding: 0;
     margin: 0;}
 .index li {margin-inline-end: 2rem;}
-.show {transition: 0.5s;opacity: 90;}
+.show {transition: 0.5s;opacity: 80;}
 /*------------------------------------------------------------------------------*/
 /*--------------------------------- page accueil --------------------------------------*/
 /* .accueil{background: url(assets/bimotron_intro_ban.jpg);} */
@@ -191,8 +191,7 @@ button:hover, .bouton-services:hover {
     left: 50%;
     transform: translate(-50%,-50%);
     min-width: 100%;
-    min-height: 100%;
-}
+    min-height: 100%;}
 .titre_principal {
     position: absolute;
     bottom: 1rem;
@@ -209,6 +208,7 @@ button:hover, .bouton-services:hover {
     color: var(--color3);
     /* font-size: 2.5rem;text-shadow: 2px 2px 4px var(--color4); */}
 .titre_principal p {color: var(--color6);font-size: medium; padding: 0;}
+.vertical{writing-mode: sideways-lr;}
 /*---------------------------------------------------------------------------------*/
 .sujets,.collabo, .video{
     display: flex;
