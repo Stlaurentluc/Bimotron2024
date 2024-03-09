@@ -84,7 +84,7 @@ a:hover {color: var(--color4);text-shadow: 2px 2px 4px var(--color4); transition
 .bar {
     width: 27px;
     height: 4px;
-    background-color: var(--color1);
+    background-color: var(--color3);
     margin: 6px 0;
     border-radius: 2px;}
 .change .bar1 {
@@ -206,7 +206,7 @@ button:hover, .bouton-services:hover {
     font-size: 2.5rem;
     text-align: left;
     color: var(--color3);
-    /* font-size: 2.5rem;text-shadow: 2px 2px 4px var(--color4); */}
+    /* text-shadow: 1px 1px 30px var(--color5); */}
 .titre_principal p {color: var(--color6);font-size: medium; padding: 0;}
 .vertical{writing-mode: sideways-lr;}
 /*---------------------------------------------------------------------------------*/
