@@ -142,7 +142,9 @@ button:hover, .bouton-services:hover {
     width: 100%;
     top: 0;
     justify-content: space-between;
-    align-items: center;}
+    align-items: center;
+    background-color: rgba(3, 14, 19, 0.5);}
+.navbarblanc{background-color: rgba(255,255,255,.75);}
 .logo {
     height: 3rem;
     margin: 1rem;}
@@ -174,19 +176,9 @@ button:hover, .bouton-services:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;}
-.accueil{ 
-    height: 100dvh;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.75); */
-    position: relative;
-    overflow: hidden;
-    min-height: 100dvh;}
 .galaxyvideo{
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -227,7 +219,7 @@ button:hover, .bouton-services:hover {
 .etapes h4{text-align: left;padding: 0 2rem;}
 .formulaire {
     max-width: 90%;
-    margin: .5rem auto;
+    margin: 5rem auto auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
